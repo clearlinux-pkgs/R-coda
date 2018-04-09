@@ -4,7 +4,7 @@
 #
 Name     : R-coda
 Version  : 0.19.1
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/coda_0.19-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/coda_0.19-1.tar.gz
 Summary  : Output Analysis and Diagnostics for MCMC
@@ -25,11 +25,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521182853
+export SOURCE_DATE_EPOCH=1523295001
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521182853
+export SOURCE_DATE_EPOCH=1523295001
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
