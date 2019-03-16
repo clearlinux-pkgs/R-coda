@@ -4,7 +4,7 @@
 #
 Name     : R-coda
 Version  : 0.19.2
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/coda_0.19-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/coda_0.19-2.tar.gz
 Summary  : Output Analysis and Diagnostics for MCMC
@@ -13,9 +13,8 @@ License  : GPL-2.0+
 BuildRequires : buildreq-R
 
 %description
-output from Markov Chain Monte Carlo (MCMC) simulations, as
-	well as diagnostic tests of convergence to the equilibrium
-	distribution of the Markov chain.
+CODA is a set of tools for analyzing the output of Markov Chain
+Monte Carlo (MCMC) simulations and diagnosing lack of convergence.
 
 %prep
 %setup -q -c -n coda
@@ -25,11 +24,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539005754
+export SOURCE_DATE_EPOCH=1552729030
 
 %install
+export SOURCE_DATE_EPOCH=1552729030
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1539005754
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -64,8 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library coda|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  coda || :
 
 
 %files
