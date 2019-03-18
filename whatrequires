@@ -12,5 +12,7 @@ R-phytools
 R-rjags
 R-rstan
 R-runjags
+R-sem
+R-sna
 R-spdep
 R-statnet.common
