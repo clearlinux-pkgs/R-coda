@@ -4,7 +4,7 @@
 #
 Name     : R-coda
 Version  : 0.19.2
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/coda_0.19-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/coda_0.19-2.tar.gz
 Summary  : Output Analysis and Diagnostics for MCMC
