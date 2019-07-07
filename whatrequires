@@ -1,13 +1,19 @@
 # This file contains recursive sources that require this package
 R-BayesFactor
 R-MCMCpack
+R-R2WinBUGS
+R-R2jags
+R-RNeXML
+R-adegenet
 R-arm
+R-bipartite
 R-bridgesampling
 R-brms
 R-conting
 R-eiPack
 R-emmeans
 R-geiger
+R-mi
 R-phytools
 R-rjags
 R-rstan
