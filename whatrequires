@@ -3,8 +3,6 @@ R-BayesFactor
 R-MCMCpack
 R-R2WinBUGS
 R-R2jags
-R-RNeXML
-R-adegenet
 R-arm
 R-bipartite
 R-bridgesampling
@@ -13,12 +11,9 @@ R-conting
 R-eiPack
 R-emmeans
 R-geiger
-R-mi
 R-phytools
 R-rjags
 R-rstan
 R-runjags
-R-sem
-R-sna
 R-spdep
 R-statnet.common

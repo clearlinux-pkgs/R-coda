@@ -4,13 +4,14 @@
 #
 Name     : R-coda
 Version  : 0.19.3
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/coda_0.19-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/coda_0.19-3.tar.gz
 Summary  : Output Analysis and Diagnostics for MCMC
 Group    : Development/Tools
 License  : GPL-2.0+
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 CODA is a set of tools for analyzing the output of Markov Chain
@@ -24,10 +25,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562518468
+export SOURCE_DATE_EPOCH=1571811557
 
 %install
-export SOURCE_DATE_EPOCH=1562518468
+export SOURCE_DATE_EPOCH=1571811557
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
