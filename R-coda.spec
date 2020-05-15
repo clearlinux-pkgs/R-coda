@@ -4,36 +4,37 @@
 #
 Name     : R-coda
 Version  : 0.19.3
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/coda_0.19-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/coda_0.19-3.tar.gz
 Summary  : Output Analysis and Diagnostics for MCMC
 Group    : Development/Tools
 License  : GPL-2.0+
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
-CODA is a set of tools for analyzing the output of Markov Chain
-Monte Carlo (MCMC) simulations and diagnosing lack of convergence.
+output from Markov Chain Monte Carlo (MCMC) simulations, as
+	well as diagnostic tests of convergence to the equilibrium
+	distribution of the Markov chain.
 
 %prep
 %setup -q -c -n coda
+cd %{_builddir}/coda
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571811557
+export SOURCE_DATE_EPOCH=1589514597
 
 %install
-export SOURCE_DATE_EPOCH=1571811557
+export SOURCE_DATE_EPOCH=1589514597
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
