@@ -6,12 +6,12 @@ R-R2jags
 R-arm
 R-bridgesampling
 R-brms
-R-conting
+R-broom.mixed
 R-eiPack
 R-geiger
 R-phytools
 R-rjags
 R-rstan
 R-runjags
-R-spdep
+R-shinystan
 R-statnet.common
